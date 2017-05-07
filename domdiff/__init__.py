@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 '''
-This module provides functions to find feeds from a given website.
+This module provides functions to find subtrees of a DOM that got removed/added
+between two HTML pages, (e.g. after an update of a website).
 '''
 
 
