@@ -12,9 +12,9 @@ setup(name='DOMdiff',
       url='https://github.com/OpenMediaMonitor/domdiff',
       packages=['domdiff'],
       install_requires=[
-          'bs4',
+          'beautifulsoup4>4.5,<5',
       ],
       tests_requires=[
-          'pytest',
+          'pytest>3,<4',
       ]
      )
