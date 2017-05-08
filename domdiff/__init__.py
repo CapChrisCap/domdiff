@@ -45,11 +45,11 @@ def additions(soup1, soup2):
     for element in _find_new_domparts(soup2, paths1):
         if element not in result:
             result.append(element)
-    nested_elements = []
+    nested_elements = set([])
     for element in result:
         for parent in element.parents:
             if parent in result:
-                nested_elements.append(element)
+                nested_elements.add(element)
     for element in nested_elements:
         result.remove(element)
     return result
