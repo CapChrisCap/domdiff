@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(name='DOMdiff',
-      version='1.0',
+      version='1.0.1',
       description=('Tool that, given two HTML pages, returns sub-trees of the'
                    'DOM that got removed and added, respectively.'),
       author='specialchar',
