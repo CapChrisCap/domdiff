@@ -127,7 +127,7 @@ def _stringify(element):
         attrs = ';'.join(
             ['%s=%s' % (name, 
                         ','.join(values) if isinstance(values, list) else values)
-             for name, values in element.attrs.iteritems()]
+             for name, values in element.attrs.items()]
         )
         if attrs:
             return '/'.join([element.name,attrs])
